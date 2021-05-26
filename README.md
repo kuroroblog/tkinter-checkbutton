@@ -1,5 +1,5 @@
-# tkinter-canvas
-Tkinterのcanvasに関するコード
+# tkinter-checkbutton
+Tkinterのcheckbuttonに関するコード
 
 # 参考記事
-https://kuroro.blog/python/ANyM9WLpd0LSXRQAELOj/
+
