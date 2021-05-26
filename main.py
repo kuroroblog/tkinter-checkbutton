@@ -4,6 +4,10 @@ class Application(tk.Frame):
     # checkbuttonに関する情報を格納する変数
     checkbutton = None
 
+    # checkbuttonが選択された場合に実行する関数
+    def showCheckButton(self):
+        print('Hello check button!!')
+
     def __init__(self, master=None):
         # Windowの初期設定を行う。
         super().__init__(master)
@@ -20,7 +24,8 @@ class Application(tk.Frame):
         frame.pack()
 
         # frame Widget(Frame)を親要素として、checkbutton Widgetを作成する。
-        self.checkbutton = tk.Checkbutton(frame)
+        # command : checkbuttonが選択された場合に、実行する関数を設定する。
+        self.checkbutton = tk.Checkbutton(frame, command=self.showCheckButton)
 
         # frame Widget(Frame)を親要素とした場合に、checkbutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
