@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class Application(tk.Frame):
-    # checkbuttonが選択された場合に実行する関数
+    # チェックボックスが選択された場合に実行する関数
     def excecuteCheckButton(self):
         print('Hello check button!!')
 
