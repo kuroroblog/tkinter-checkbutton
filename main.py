@@ -1,9 +1,6 @@
 import tkinter as tk
 
 class Application(tk.Frame):
-    # checkbuttonに関する情報を格納する変数
-    checkbutton = None
-
     # checkbuttonが選択された場合に実行する関数
     def excecuteCheckButton(self):
         print('Hello check button!!')
@@ -17,20 +14,20 @@ class Application(tk.Frame):
         self.master.geometry("300x200")
 
         # Windowを親要素として、frame Widget(Frame)を作成する。
-        # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
+        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         frame = tk.Frame(self.master)
 
-        # Windowを親要素とした場合に、frame Widgetをどのように配置するのか?
+        # Windowを親要素とした場合に、frame Widget(Frame)をどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         frame.pack()
 
         # frame Widget(Frame)を親要素として、checkbutton Widgetを作成する。
-        # command : checkbuttonが選択された場合に、実行する関数を設定する。
-        self.checkbutton = tk.Checkbutton(frame, command=self.excecuteCheckButton)
+        # command : チェックボックスが選択された場合に、実行する関数を設定する。self.excecuteCheckButtonとする。
+        checkbutton = tk.Checkbutton(frame, command=self.excecuteCheckButton)
 
         # frame Widget(Frame)を親要素とした場合に、checkbutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
-        self.checkbutton.pack()
+        checkbutton.pack()
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
 if __name__ == "__main__":
