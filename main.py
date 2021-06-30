@@ -23,7 +23,7 @@ class Application(tk.Frame):
 
         # frame Widget(Frame)を親要素として、checkbutton Widgetを作成する。
         # command : チェックボックスが選択された場合に、実行する関数を設定する。self.excecuteCheckButtonとする。
-        # チェックボックスとは? : https://www.724685.com/word/wd120829.htm
+        # チェックボックスとは? : https://wa3.i-3-i.info/word18220.html
         checkbutton = tk.Checkbutton(frame, command=self.excecuteCheckButton)
 
         # frame Widget(Frame)を親要素とした場合に、checkbutton Widgetをどのように配置するのか?
