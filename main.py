@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class Application(tk.Frame):
-    # チェックボックスが選択された場合に実行する関数
+    # checkbutton Widget(チェックボックス)が選択された場合に実行する関数
     def excecuteCheckButton(self):
         print('Hello check button!!')
 
@@ -22,7 +22,7 @@ class Application(tk.Frame):
         frame.pack()
 
         # frame Widget(Frame)を親要素として、checkbutton Widgetを作成する。
-        # command : チェックボックスが選択された場合に、実行する関数を設定する。self.excecuteCheckButtonとする。
+        # command : checkbutton Widget(チェックボックス)が選択された場合に、実行する関数を設定する。self.excecuteCheckButtonとする。
         # チェックボックスとは? : https://wa3.i-3-i.info/word18220.html
         checkbutton = tk.Checkbutton(frame, command=self.excecuteCheckButton)
 
@@ -35,7 +35,9 @@ if __name__ == "__main__":
     # Windowを生成する。
     # Windowについて : https://kuroro.blog/python/116yLvTkzH2AUJj8FHLx/
     root = tk.Tk()
+
     app = Application(master=root)
+
     # Windowをループさせて、継続的にWindow表示させる。
     # mainloopについて : https://kuroro.blog/python/DmJdUb50oAhmBteRa4fi/
     app.mainloop()
